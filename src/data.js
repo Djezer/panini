@@ -4,74 +4,13 @@ export const ALREADY_GOT = {
   "UZB 6":true,"GHA 10":true,"PAN 15":true
 };
 
-export const RECENT_DOUBLES = [
-  { code: "MEX 15", name: "?" },
-  { code: "MEX 11", name: "Orbelin Pineda" },
-  { code: "RSA 8", name: "?" },
-  { code: "RSA 4", name: "?" },
-  { code: "KOR 17", name: "?" },
-  { code: "KOR 12", name: "?" },
-  { code: "KOR 13", name: "?" },
-  { code: "CAN 11", name: "?" },
-  { code: "QAT 14", name: "?" },
-  { code: "SUI 15", name: "?" },
-  { code: "SUI 2", name: "?" },
-  { code: "BRA 11", name: "?" },
-  { code: "BRA 18", name: "?" },
-  { code: "MAR 19", name: "Brahim Diaz" },
-  { code: "MAR 9", name: "?" },
-  { code: "HAI 10", name: "?" },
-  { code: "USA 20", name: "?" },
-  { code: "PAR 14", name: "?" },
-  { code: "PAR 12", name: "?" },
-  { code: "AUS 8", name: "?" },
-  { code: "CIV 12", name: "?" },
-  { code: "ECU 16", name: "?" },
-  { code: "NED 17", name: "?" },
-  { code: "NED 18", name: "?" },
-  { code: "NED 6", name: "?" },
-  { code: "NED 13", name: "?" },
-  { code: "NED 3", name: "?" },
-  { code: "NED 14", name: "?" },
-  { code: "JPN 20", name: "?" },
-  { code: "JPN 13", name: "?" },
-  { code: "TUN 3", name: "?" },
-  { code: "TUN 15", name: "?" },
-  { code: "IRN 15", name: "?" },
-  { code: "NZL 7", name: "?" },
-  { code: "NZL 18", name: "?" },
-  { code: "CPV 3", name: "?" },
-  { code: "CPV 9", name: "?" },
-  { code: "CPV 15", name: "?" },
-  { code: "KSA 7", name: "?" },
-  { code: "KSA 6", name: "?" },
-  { code: "URU 19", name: "?" },
-  { code: "URU 7", name: "?" },
-  { code: "FRA 10", name: "?" },
-  { code: "FRA 5", name: "?" },
-  { code: "SEN 3", name: "?" },
-  { code: "SEN 7", name: "?" },
-  { code: "NOR 1", name: "?" },
-  { code: "NOR 5", name: "?" },
-  { code: "AUT 6", name: "?" },
-  { code: "AUT 13", name: "?" },
-  { code: "AUT 10", name: "?" },
-  { code: "JOR 4", name: "?" },
-  { code: "JOR 15", name: "?" },
-  { code: "UZB 19", name: "?" },
-  { code: "COL 2", name: "?" },
-  { code: "GHA 13", name: "?" },
-  { code: "PAN 11", name: "?" },
-  { code: "CRO 15", name: "?" },
-  { code: "FWC 15", name: "?" },
-  { code: "FWC 12", name: "?" },
-  { code: "FWC 17", name: "?" },
-];
+export const RECENT_DOUBLES = [];
+
 
 export const GROUPS = {
   "⭐":{ label:"Spéciaux", color:"#f5c518", bg:"#1a1500",
     missing:{"⭐ Holographiques":[["FWC 1","Official Emblem"],["FWC 11","Suisse 1954"],["FWC 14","Mexique 1986"],["FWC 16","Corée/Japon 2002"]]},
-    doubles:{"⭐ Holographiques":[["FWC 2","?"],["FWC 4","?"],["FWC 15","?"],["FWC 19","?"]]}
+    doubles:{"⭐ Holographiques":[["FWC 2","?"],["FWC 4","?"],["FWC 12","?"],["FWC 15","?"],["FWC 17","?"],["FWC 19","?"]]}
   },
   "A":{ label:"Groupe A", color:"#2ecc71", bg:"#0a1f0f",
     missing:{
@@ -81,9 +20,9 @@ export const GROUPS = {
       "🇨🇿 Tchéquie":[["CZE 1","?"],["CZE 2","Matej Kovar"],["CZE 5","Vladimir Coufal"],["CZE 8","David Zima"],["CZE 9","Michal Sadilek"],["CZE 14","Pavel Sulc"],["CZE 15","Matej Vydra"]]
     },
     doubles:{
-      "🇲🇽 Mexique":[["MEX 2","?"],["MEX 3","?"],["MEX 4","?"],["MEX 6","?"],["MEX 16","?"]],
-      "🇿🇦 Afrique du Sud":[["RSA 3","?"],["RSA 8","?"],["RSA 9","?"],["RSA 10","?"],["RSA 14","?"]],
-      "🇰🇷 Corée du Sud":[["KOR 1","?"],["KOR 8","?"],["KOR 16","?"]],
+      "🇲🇽 Mexique":[["MEX 2","?"],["MEX 3","?"],["MEX 4","?"],["MEX 6","?"],["MEX 16","?"],["MEX 15","?"]],
+      "🇿🇦 Afrique du Sud":[["RSA 3","?"],["RSA 8","?"],["RSA 9","?"],["RSA 10","?"],["RSA 14","?"],["RSA 4","?"]],
+      "🇰🇷 Corée du Sud":[["KOR 1","?"],["KOR 8","?"],["KOR 16","?"],["KOR 17","?"],["KOR 12","?"],["KOR 13","?"]],
       "🇨🇿 Tchéquie":[["CZE 10","?"],["CZE 20","?"]]
     }
   },
@@ -95,10 +34,10 @@ export const GROUPS = {
       "🇨🇭 Suisse":[["SUI 11","Remo Freuler"],["SUI 13","?"],["SUI 18","Ruben Vargas"],["SUI 20","Zeki Amdouni"]]
     },
     doubles:{
-      "🇨🇦 Canada":[["CAN 5","?"],["CAN 8","?"],["CAN 9","?"],["CAN 10","?"],["CAN 13","?"],["CAN 15","?"]],
+      "🇨🇦 Canada":[["CAN 5","?"],["CAN 8","?"],["CAN 9","?"],["CAN 10","?"],["CAN 13","?"],["CAN 15","?"],["CAN 11","?"]],
       "🇧🇦 Bosnie-Herzégovine":[["BIH 1","?"],["BIH 4","?"],["BIH 5","?"],["BIH 8","?"],["BIH 10","?"],["BIH 14","?"],["BIH 15","?"]],
-      "🇶🇦 Qatar":[["QAT 8","?"],["QAT 11","?"],["QAT 17","?"]],
-      "🇨🇭 Suisse":[["SUI 1","?"],["SUI 7","?"],["SUI 10","?"],["SUI 14","?"],["SUI 15","?"],["SUI 16","?"]]
+      "🇶🇦 Qatar":[["QAT 8","?"],["QAT 11","?"],["QAT 17","?"],["QAT 14","?"]],
+      "🇨🇭 Suisse":[["SUI 1","?"],["SUI 7","?"],["SUI 10","?"],["SUI 14","?"],["SUI 15","?"],["SUI 16","?"],["SUI 2","?"]],
     }
   },
   "C":{ label:"Groupe C", color:"#f39c12", bg:"#1a1200",
@@ -109,9 +48,9 @@ export const GROUPS = {
       "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Écosse":[["SCO 5","Aaron Hickey"],["SCO 6","Andrew Robertson"],["SCO 13","?"],["SCO 15","Ryan Christie"],["SCO 16","Kenny McLean"],["SCO 18","Lyndon Dykes"]]
     },
     doubles:{
-      "🇧🇷 Brésil":[["BRA 5","?"],["BRA 14","?"],["BRA 16","?"]],
-      "🇲🇦 Maroc":[["MAR 3","?"],["MAR 12","?"]],
-      "🇭🇹 Haïti":[["HAI 1","?"],["HAI 2","?"],["HAI 3","?"],["HAI 5","?"],["HAI 9","?"],["HAI 14","?"],["HAI 18","?"]],
+      "🇧🇷 Brésil":[["BRA 5","?"],["BRA 14","?"],["BRA 16","?"],["BRA 11","?"],["BRA 18","?"]],
+      "🇲🇦 Maroc":[["MAR 3","?"],["MAR 12","?"],["MAR 9","?"]],
+      "🇭🇹 Haïti":[["HAI 1","?"],["HAI 2","?"],["HAI 3","?"],["HAI 5","?"],["HAI 9","?"],["HAI 14","?"],["HAI 18","?"],["HAI 10","?"]],
       "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Écosse":[["SCO 1","?"],["SCO 2","?"],["SCO 19","?"]]
     }
   },
@@ -123,8 +62,8 @@ export const GROUPS = {
       "🇹🇷 Türkiye":[["TUR 2","Ugurhan Cakir"],["TUR 3","Mert Muldur"],["TUR 6","Caglar Soyungu"],["TUR 16","Yunis Akgun"],["TUR 20","Ozan Yilmaz"]]
     },
     doubles:{
-      "🇺🇸 États-Unis":[["USA 6","?"],["USA 8","?"],["USA 11","?"],["USA 12","?"],["USA 14","?"],["USA 19","?"]],
-      "🇵🇾 Paraguay":[["PAR 8","?"],["PAR 11","?"],["PAR 16","?"]],
+      "🇺🇸 États-Unis":[["USA 6","?"],["USA 8","?"],["USA 11","?"],["USA 12","?"],["USA 14","?"],["USA 19","?"],["USA 20","?"]],
+      "🇵🇾 Paraguay":[["PAR 8","?"],["PAR 11","?"],["PAR 16","?"],["PAR 14","?"],["PAR 12","?"]],
       "🇦🇺 Australie":[["AUS 3","?"],["AUS 8","?"],["AUS 9","?"],["AUS 10","?"],["AUS 15","?"],["AUS 20","?"]],
       "🇹🇷 Türkiye":[["TUR 1","?"],["TUR 8","?"],["TUR 10","?"],["TUR 14","?"]]
     }
@@ -138,9 +77,9 @@ export const GROUPS = {
     },
     doubles:{
       "🇩🇪 Allemagne":[["GER 4","?"],["GER 12","?"],["GER 16","?"]],
-      "🇨🇮 Côte d'Ivoire":[["CIV 3","?"],["CIV 5","?"],["CIV 8","?"],["CIV 10","?"],["CIV 20","?"]],
+      "🇨🇮 Côte d'Ivoire":[["CIV 3","?"],["CIV 5","?"],["CIV 8","?"],["CIV 10","?"],["CIV 20","?"],["CIV 12","?"]],
       "🇨🇼 Curaçao":[["CUW 6","?"],["CUW 7","?"],["CUW 11","?"],["CUW 15","?"],["CUW 18","?"]],
-      "🇪🇨 Équateur":[["ECU 7","?"],["ECU 13","?"],["ECU 15","?"]]
+      "🇪🇨 Équateur":[["ECU 7","?"],["ECU 13","?"],["ECU 15","?"],["ECU 16","?"]],
     }
   },
   "F":{ label:"Groupe F", color:"#9b59b6", bg:"#110a1a",
@@ -151,10 +90,10 @@ export const GROUPS = {
       "🇹🇳 Tunisie":[["TUN 1","?"],["TUN 4","Van Valery"],["TUN 6","V. Meriah"],["TUN 7","Ali Abdi"],["TUN 8","Dylan Bronn"],["TUN 9","Elyes Skhiri"],["TUN 12","M.A. Ben Romdhane"],["TUN 13","?"],["TUN 17","H. Mastouri"],["TUN 18","I. Gharbi"]]
     },
     doubles:{
-      "🇳🇱 Pays-Bas":[["NED 2","?"]],
-      "🇯🇵 Japon":[["JPN 1","?"],["JPN 5","?"],["JPN 13","?"],["JPN 15","?"]],
+      "🇳🇱 Pays-Bas":[["NED 2","?"],["NED 17","?"],["NED 18","?"],["NED 6","?"],["NED 13","?"],["NED 3","?"],["NED 14","?"]],
+      "🇯🇵 Japon":[["JPN 1","?"],["JPN 5","?"],["JPN 13","?"],["JPN 15","?"],["JPN 20","?"]],
       "🇸🇪 Suède":[["SWE 2","?"],["SWE 3","?"],["SWE 5","?"],["SWE 9","?"],["SWE 19","?"]],
-      "🇹🇳 Tunisie":[["TUN 11","?"],["TUN 14","?"],["TUN 19","?"]]
+      "🇹🇳 Tunisie":[["TUN 11","?"],["TUN 14","?"],["TUN 19","?"],["TUN 3","?"],["TUN 15","?"]],
     }
   },
   "G":{ label:"Groupe G", color:"#1abc9c", bg:"#041510",
@@ -167,8 +106,8 @@ export const GROUPS = {
     doubles:{
       "🇧🇪 Belgique":[["BEL 5","?"],["BEL 8","?"],["BEL 12","?"],["BEL 14","?"]],
       "🇪🇬 Égypte":[["EGY 1","?"],["EGY 3","?"],["EGY 4","?"],["EGY 6","?"],["EGY 9","?"],["EGY 16","?"],["EGY 20","?"]],
-      "🇮🇷 Iran":[["IRN 1","?"],["IRN 5","?"],["IRN 6","?"],["IRN 8","?"],["IRN 9","?"],["IRN 10","?"],["IRN 13","?"],["IRN 17","?"]],
-      "🇳🇿 Nouvelle-Zélande":[["NZL 1","?"],["NZL 9","?"],["NZL 10","?"],["NZL 15","?"],["NZL 19","?"]]
+      "🇮🇷 Iran":[["IRN 1","?"],["IRN 5","?"],["IRN 6","?"],["IRN 8","?"],["IRN 9","?"],["IRN 10","?"],["IRN 13","?"],["IRN 17","?"],["IRN 15","?"]],
+      "🇳🇿 Nouvelle-Zélande":[["NZL 1","?"],["NZL 9","?"],["NZL 10","?"],["NZL 15","?"],["NZL 19","?"],["NZL 7","?"],["NZL 18","?"]],
     }
   },
   "H":{ label:"Groupe H", color:"#c0392b", bg:"#1a0505",
@@ -180,8 +119,8 @@ export const GROUPS = {
     },
     doubles:{
       "🇪🇸 Espagne":[["ESP 18","?"]],
-      "🇨🇻 Cabo Verde":[["CPV 2","?"],["CPV 6","?"],["CPV 9","?"],["CPV 13","?"],["CPV 17","?"]],
-      "🇸🇦 Arabie Saoudite":[["KSA 5","?"],["KSA 9","?"],["KSA 14","?"],["KSA 15","?"],["KSA 17","?"]],
+      "🇨🇻 Cabo Verde":[["CPV 2","?"],["CPV 6","?"],["CPV 9","?"],["CPV 13","?"],["CPV 17","?"],["CPV 3","?"],["CPV 15","?"]],
+      "🇸🇦 Arabie Saoudite":[["KSA 5","?"],["KSA 9","?"],["KSA 14","?"],["KSA 15","?"],["KSA 17","?"],["KSA 7","?"],["KSA 6","?"]],
       "🇺🇾 Uruguay":[["URU 4","?"],["URU 7","?"],["URU 14","?"],["URU 19","?"]]
     }
   },
@@ -193,10 +132,10 @@ export const GROUPS = {
       "🇳🇴 Norvège":[["NOR 6","M. H. Pedersen"],["NOR 9","M. Thorsby"],["NOR 13","?"],["NOR 14","Patrick Berg"],["NOR 19","Antonio Nusa"],["NOR 20","Oscar Bobb"]]
     },
     doubles:{
-      "🇫🇷 France":[["FRA 7","?"],["FRA 11","?"]],
-      "🇸🇳 Sénégal":[["SEN 2","?"],["SEN 3","?"],["SEN 5","?"],["SEN 9","?"],["SEN 11","?"],["SEN 19","?"]],
+      "🇫🇷 France":[["FRA 7","?"],["FRA 11","?"],["FRA 10","?"],["FRA 5","?"]],
+      "🇸🇳 Sénégal":[["SEN 2","?"],["SEN 3","?"],["SEN 5","?"],["SEN 9","?"],["SEN 11","?"],["SEN 19","?"],["SEN 7","?"]],
       "🇮🇶 Irak":[["IRQ 10","?"],["IRQ 15","?"],["IRQ 16","?"],["IRQ 17","?"],["IRQ 20","?"]],
-      "🇳🇴 Norvège":[["NOR 5","?"],["NOR 7","?"],["NOR 8","?"],["NOR 16","?"],["NOR 18","?"]]
+      "🇳🇴 Norvège":[["NOR 5","?"],["NOR 7","?"],["NOR 8","?"],["NOR 16","?"],["NOR 18","?"],["NOR 1","?"]],
     }
   },
   "J":{ label:"Groupe J", color:"#75c2f6", bg:"#030e1a",
@@ -209,7 +148,7 @@ export const GROUPS = {
     doubles:{
       "🇦🇷 Argentine":[["ARG 1","?"],["ARG 15","?"],["ARG 20","?"]],
       "🇩🇿 Algérie":[["ALG 7","?"],["ALG 14","?"],["ALG 19","?"]],
-      "🇦🇹 Autriche":[["AUT 9","?"]],
+      "🇦🇹 Autriche":[["AUT 9","?"],["AUT 6","?"],["AUT 13","?"],["AUT 10","?"]],
       "🇯🇴 Jordanie":[["JOR 1","?"],["JOR 4","?"],["JOR 11","?"],["JOR 14","?"],["JOR 15","?"],["JOR 17","?"],["JOR 19","?"]]
     }
   },
@@ -223,7 +162,7 @@ export const GROUPS = {
     doubles:{
       "🇵🇹 Portugal":[["POR 5","?"],["POR 18","?"]],
       "🇨🇩 Congo DR":[["COD 2","?"],["COD 6","?"],["COD 7","?"],["COD 8","?"],["COD 10","?"],["COD 11","?"],["COD 13","?"],["COD 19","?"]],
-      "🇺🇿 Ouzbékistan":[["UZB 2","?"],["UZB 4","?"],["UZB 7","?"],["UZB 8","?"],["UZB 13","?"],["UZB 17","?"]],
+      "🇺🇿 Ouzbékistan":[["UZB 2","?"],["UZB 4","?"],["UZB 7","?"],["UZB 8","?"],["UZB 13","?"],["UZB 17","?"],["UZB 19","?"]],
       "🇨🇴 Colombie":[["COL 2","?"],["COL 13","?"],["COL 15","?"],["COL 17","?"],["COL 18","?"]]
     }
   },
@@ -238,7 +177,7 @@ export const GROUPS = {
       "🇬🇭 Ghana":[["GHA 1","?"],["GHA 2","?"],["GHA 3","?"],["GHA 13","?"],["GHA 20","?"]],
       "🇵🇦 Panama":[["PAN 1","?"],["PAN 3","?"],["PAN 8","?"],["PAN 11","?"],["PAN 13","?"]],
       "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre":[["ENG 5","?"],["ENG 6","?"],["ENG 7","?"],["ENG 13","?"]],
-      "🇭🇷 Croatie":[["CRO 1","?"],["CRO 5","?"],["CRO 11","?"],["CRO 12","?"],["CRO 18","?"]]
+      "🇭🇷 Croatie":[["CRO 1","?"],["CRO 5","?"],["CRO 11","?"],["CRO 12","?"],["CRO 18","?"],["CRO 15","?"]],
     }
   }
 };
