@@ -33,7 +33,10 @@ export default function App() {
   const [got, setGot] = useState(() => {
     try {
       const saved = localStorage.getItem("panini_got");
-      return saved ? JSON.parse(saved) : { ...ALREADY_GOT };
+      const savedData = saved ? JSON.parse(saved) : {};
+      // Fusionne toujours les nouveaux ALREADY_GOT avec ce qui est sauvegardé
+      // (permet de figer de nouveaux stickers même si l'utilisateur a déjà une sauvegarde locale)
+      return { ...ALREADY_GOT, ...savedData };
     } catch { return { ...ALREADY_GOT }; }
   });
   const [mode, setMode] = useState("missing");
