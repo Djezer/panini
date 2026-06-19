@@ -184,38 +184,12 @@ export default function App() {
         {/* RECENT DOUBLES banner (doubles mode only) */}
         {mode === "doubles" && (
           <>
-            <div style={{background:"#0a1f10", border:"1px solid #2ecc7133", borderRadius:12, padding:"14px 18px", marginBottom:16, display:"flex", alignItems:"center", gap:12}}>
+            <div style={{background:"#0a1f10", border:"1px solid #2ecc7133", borderRadius:12, padding:"14px 18px", marginBottom:20, display:"flex", alignItems:"center", gap:12}}>
               <div style={{fontSize:26}}>🔄</div>
               <div>
                 <div style={{fontSize:22, fontWeight:900, color:"#2ecc71"}}>{totalDoubles()} doubles au total</div>
-                <div style={{fontSize:12, color:"#2ecc71aa", marginTop:2}}>Disponibles pour l'échange !</div>
+                <div style={{fontSize:12, color:"#2ecc71aa", marginTop:2}}>Disponibles pour l'échange ! Repérés par 🆕 si récents.</div>
               </div>
-            </div>
-
-            {/* Recent doubles section */}
-            <div style={{background:"#0d1a1a", border:"1px solid #00bcd455", borderRadius:12, padding:"16px 18px", marginBottom:20}}>
-              <div style={{display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:12}}>
-                <div style={{fontWeight:800, fontSize:15, color:"#00bcd4"}}>🆕 Nouveaux doubles reçus</div>
-                <div style={{fontSize:11, fontWeight:600, padding:"3px 10px", borderRadius:20, background:"#00bcd422", color:"#00bcd4cc"}}>
-                  {RECENT_DOUBLES.length} sticker{RECENT_DOUBLES.length!==1?"s":""}
-                </div>
-              </div>
-              {RECENT_DOUBLES.length === 0 ? (
-                <div style={{textAlign:"center", padding:"20px 0", color:"#ffffff33", fontSize:13}}>
-                  <div style={{fontSize:28, marginBottom:8}}>📭</div>
-                  Aucun nouveau double pour l'instant<br/>
-                  <span style={{fontSize:11, color:"#ffffff22"}}>Envoie ta liste et on les ajoute ici !</span>
-                </div>
-              ) : (
-                <div style={{display:"flex", flexWrap:"wrap", gap:7}}>
-                  {RECENT_DOUBLES.map(s => (
-                    <div key={s.code} style={{borderRadius:9, padding:"9px 12px", display:"flex", flexDirection:"column", alignItems:"center", gap:3, minWidth:76, border:"1.5px solid #00bcd455", background:"#001f22"}}>
-                      <div style={{fontWeight:800, fontSize:13, color:"#00bcd4"}}>{s.code}</div>
-                      <div style={{fontSize:9, color:"#00bcd4aa", textAlign:"center", lineHeight:1.3}}>{s.name}</div>
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
           </>
         )}
