@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { GROUPS, ALREADY_GOT, RECENT_DOUBLES } from "./data";
+import { GROUPS, ALREADY_GOT, RECENT_DOUBLES, NEW_DOUBLES_HIGHLIGHT } from "./data";
 
 const S = {
   body: { minHeight:"100vh", background:"#0d0d0d", fontFamily:"'Inter',sans-serif", color:"#fff" },
@@ -184,13 +184,21 @@ export default function App() {
         {/* RECENT DOUBLES banner (doubles mode only) */}
         {mode === "doubles" && (
           <>
-            <div style={{background:"#0a1f10", border:"1px solid #2ecc7133", borderRadius:12, padding:"14px 18px", marginBottom:20, display:"flex", alignItems:"center", gap:12}}>
+            <div style={{background:"#0a1f10", border:"1px solid #2ecc7133", borderRadius:12, padding:"14px 18px", marginBottom:12, display:"flex", alignItems:"center", gap:12}}>
               <div style={{fontSize:26}}>🔄</div>
               <div>
                 <div style={{fontSize:22, fontWeight:900, color:"#2ecc71"}}>{totalDoubles()} doubles au total</div>
-                <div style={{fontSize:12, color:"#2ecc71aa", marginTop:2}}>Disponibles pour l'échange ! Repérés par 🆕 si récents.</div>
+                <div style={{fontSize:12, color:"#2ecc71aa", marginTop:2}}>Disponibles pour l'échange !</div>
               </div>
             </div>
+            {NEW_DOUBLES_HIGHLIGHT.length > 0 && (
+              <div style={{background:"#001f22", border:"1px solid #00bcd455", borderRadius:12, padding:"12px 18px", marginBottom:20, display:"flex", alignItems:"center", gap:10}}>
+                <div style={{fontSize:18}}>🆕</div>
+                <div style={{fontSize:12, color:"#00bcd4cc", fontWeight:600}}>
+                  {NEW_DOUBLES_HIGHLIGHT.length} nouveaux doubles reçus récemment — repérables en bleu ci-dessous
+                </div>
+              </div>
+            )}
           </>
         )}
 
@@ -212,12 +220,29 @@ export default function App() {
               <div style={{display:"flex", flexWrap:"wrap", gap:7}}>
                 {stickers.map(([code, name]) => {
                   const isGot = !!got[code];
-                  if (mode==="doubles") return (
-                    <div key={code} style={{borderRadius:9, padding:"9px 12px", display:"flex", flexDirection:"column", alignItems:"center", gap:3, minWidth:76, border:"1.5px solid #2ecc7155", background:"#0a1f10"}}>
-                      <div style={{fontWeight:800, fontSize:13, color:"#2ecc71"}}>{code}</div>
-                      <div style={{fontSize:9, color:"#2ecc71aa", textAlign:"center", lineHeight:1.3, maxWidth:72}}>{name}</div>
-                    </div>
-                  );
+                  if (mode==="doubles") {
+                    const isNew = NEW_DOUBLES_HIGHLIGHT.includes(code);
+                    return (
+                      <div key={code} style={{
+                        borderRadius:9, padding:"9px 12px", display:"flex", flexDirection:"column",
+                        alignItems:"center", gap:3, minWidth:76, position:"relative",
+                        border: isNew ? "1.5px solid #00bcd4" : "1.5px solid #2ecc7155",
+                        background: isNew ? "#001f22" : "#0a1f10",
+                        boxShadow: isNew ? "0 0 12px #00bcd455" : "none"
+                      }}>
+                        {isNew && (
+                          <div style={{
+                            position:"absolute", top:-8, right:-6,
+                            background:"#00bcd4", color:"#000",
+                            fontSize:8, fontWeight:900, padding:"2px 6px",
+                            borderRadius:8, letterSpacing:.5
+                          }}>🆕 NEW</div>
+                        )}
+                        <div style={{fontWeight:800, fontSize:13, color: isNew ? "#00bcd4" : "#2ecc71"}}>{code}</div>
+                        <div style={{fontSize:9, color: isNew ? "#00bcd4aa" : "#2ecc71aa", textAlign:"center", lineHeight:1.3, maxWidth:72}}>{name}</div>
+                      </div>
+                    );
+                  }
                   return (
                     <div key={code} onClick={() => toggle(code, name)}
                       style={{
