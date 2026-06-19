@@ -58,6 +58,10 @@ export default function App() {
   const pct = Math.round((gotCount / totalMissing()) * 100);
 
   function toggle(code, name) {
+    if (ALREADY_GOT[code]) {
+      setToast("🔒 " + code + " définitivement validé");
+      return;
+    }
     setGot(prev => {
       const next = { ...prev };
       if (next[code]) { delete next[code]; setToast("↩ " + code + " retiré"); }
@@ -246,10 +250,11 @@ export default function App() {
                       </div>
                     );
                   }
+                  const isLocked = !!ALREADY_GOT[code];
                   return (
                     <div key={code} onClick={() => toggle(code, name)}
                       style={{
-                        borderRadius:9, padding:"9px 12px", cursor:"pointer",
+                        borderRadius:9, padding:"9px 12px", cursor: isLocked ? "default" : "pointer",
                         display:"flex", flexDirection:"column", alignItems:"center", gap:3,
                         minWidth:76, border:`1.5px solid ${g.color}44`,
                         background: g.bg, position:"relative",
@@ -257,7 +262,9 @@ export default function App() {
                         WebkitTapHighlightColor:"transparent"
                       }}>
                       {isGot && (
-                        <div style={{position:"absolute", inset:0, display:"flex", alignItems:"center", justifyContent:"center", fontSize:24, fontWeight:900, color:"#2ecc71", background:"#00000077", borderRadius:8}}>✓</div>
+                        <div style={{position:"absolute", inset:0, display:"flex", alignItems:"center", justifyContent:"center", fontSize:24, fontWeight:900, color:"#2ecc71", background:"#00000077", borderRadius:8}}>
+                          {isLocked ? "🔒" : "✓"}
+                        </div>
                       )}
                       <div style={{fontWeight:800, fontSize:13, color:g.color, letterSpacing:.5}}>{code}</div>
                       <div style={{fontSize:9, color:"#ffffffaa", textAlign:"center", lineHeight:1.3, maxWidth:72}}>{name}</div>
