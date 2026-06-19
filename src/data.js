@@ -1,7 +1,16 @@
 export const ALREADY_GOT = {
   "MEX 11":true,"RSA 11":true,"MAR 19":true,"URU 15":true,
   "ALG 3":true,"ARG 19":true,"POR 12":true,"POR 15":true,
-  "UZB 6":true,"GHA 10":true,"PAN 15":true
+  "UZB 6":true,"GHA 10":true,"PAN 15":true,
+  "RSA 5":true,"QAT 6":true,"QAT 7":true,"BRA 15":true,"MAR 5":true,
+  "HAI 12":true,"SCO 5":true,"PAR 6":true,"TUR 6":true,
+  "GER 7":true,"GER 5":true,"GER 15":true,"CIV 16":true,"CIV 6":true,
+  "CUW 13":true,"ECU 5":true,"NED 19":true,"NED 8":true,
+  "SWE 11":true,"BEL 18":true,"EGY 18":true,"ESP 14":true,
+  "CPV 20":true,"CPV 5":true,"FRA 14":true,"SEN 14":true,
+  "IRQ 6":true,"IRQ 18":true,"NOR 6":true,"ALG 18":true,"ALG 8":true,
+  "AUT 1":true,"AUT 3":true,"AUT 17":true,"JOR 8":true,
+  "POR 2":true,"POR 3":true,"COL 7":true,"PAN 10":true,"CRO 7":true
 };
 
 export const RECENT_DOUBLES = [];
