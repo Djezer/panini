@@ -16,7 +16,7 @@ export const ALREADY_GOT = {
 export const RECENT_DOUBLES = [];
 
 // Codes des doubles récemment reçus (mis en surbrillance dans l'onglet doubles)
-export const NEW_DOUBLES_HIGHLIGHT = ["MEX 15","RSA 8","RSA 4","KOR 17","KOR 12","KOR 13","CAN 11","QAT 14","SUI 15","SUI 2","BRA 11","BRA 18","MAR 9","HAI 10","USA 20","PAR 14","PAR 12","AUS 8","CIV 12","ECU 16","NED 17","NED 18","NED 6","NED 13","NED 3","NED 14","JPN 20","JPN 13","TUN 3","TUN 15","IRN 15","NZL 7","NZL 18","CPV 3","CPV 9","CPV 15","KSA 7","KSA 6","URU 19","URU 7","FRA 10","FRA 5","SEN 3","SEN 7","NOR 1","NOR 5","AUT 6","AUT 13","AUT 10","JOR 4","JOR 15","UZB 19","COL 2","GHA 13","PAN 11","CRO 15","FWC 15","FWC 12","FWC 17"];
+export const NEW_DOUBLES_HIGHLIGHT = ["MEX 15","RSA 8","RSA 4","KOR 17","KOR 12","KOR 13","CAN 11","QAT 14","SUI 15","SUI 2","BRA 11","BRA 18","MAR 9","HAI 10","USA 20","PAR 14","PAR 12","AUS 8","CIV 12","ECU 16","NED 17","NED 18","NED 6","NED 13","NED 3","NED 14","JPN 20","JPN 13","TUN 3","TUN 15","IRN 15","NZL 7","NZL 18","CPV 3","CPV 9","CPV 15","KSA 7","KSA 6","URU 19","URU 7","FRA 10","FRA 5","SEN 3","SEN 7","NOR 1","NOR 5","AUT 6","AUT 13","AUT 10","JOR 4","JOR 15","UZB 19","COL 2","GHA 13","PAN 11","CRO 15","FWC 15","FWC 12","FWC 17","CZE 4","CZE 13","TUR 19","SWE 4","SWE 15","SWE 14"];
 
 
 export const GROUPS = {
@@ -35,7 +35,7 @@ export const GROUPS = {
       "🇲🇽 Mexique":[["MEX 2","?"],["MEX 3","?"],["MEX 4","?"],["MEX 6","?"],["MEX 16","?"],["MEX 15","?"]],
       "🇿🇦 Afrique du Sud":[["RSA 3","?"],["RSA 8","?"],["RSA 9","?"],["RSA 10","?"],["RSA 14","?"],["RSA 4","?"]],
       "🇰🇷 Corée du Sud":[["KOR 1","?"],["KOR 8","?"],["KOR 16","?"],["KOR 17","?"],["KOR 12","?"],["KOR 13","?"]],
-      "🇨🇿 Tchéquie":[["CZE 10","?"],["CZE 20","?"]]
+      "🇨🇿 Tchéquie":[["CZE 10","?"],["CZE 20","?"],["CZE 4","?"],["CZE 13","?"]]
     }
   },
   "B":{ label:"Groupe B", color:"#e74c3c", bg:"#1a0a09",
@@ -77,7 +77,7 @@ export const GROUPS = {
       "🇺🇸 États-Unis":[["USA 6","?"],["USA 8","?"],["USA 11","?"],["USA 12","?"],["USA 14","?"],["USA 19","?"],["USA 20","?"]],
       "🇵🇾 Paraguay":[["PAR 8","?"],["PAR 11","?"],["PAR 16","?"],["PAR 14","?"],["PAR 12","?"]],
       "🇦🇺 Australie":[["AUS 3","?"],["AUS 8","?"],["AUS 9","?"],["AUS 10","?"],["AUS 15","?"],["AUS 20","?"]],
-      "🇹🇷 Türkiye":[["TUR 1","?"],["TUR 8","?"],["TUR 10","?"],["TUR 14","?"]]
+      "🇹🇷 Türkiye":[["TUR 1","?"],["TUR 8","?"],["TUR 10","?"],["TUR 14","?"],["TUR 19","?"]]
     }
   },
   "E":{ label:"Groupe E", color:"#e67e22", bg:"#1a0e00",
@@ -104,7 +104,7 @@ export const GROUPS = {
     doubles:{
       "🇳🇱 Pays-Bas":[["NED 2","?"],["NED 17","?"],["NED 18","?"],["NED 6","?"],["NED 13","?"],["NED 3","?"],["NED 14","?"]],
       "🇯🇵 Japon":[["JPN 1","?"],["JPN 5","?"],["JPN 13","?"],["JPN 15","?"],["JPN 20","?"]],
-      "🇸🇪 Suède":[["SWE 2","?"],["SWE 3","?"],["SWE 5","?"],["SWE 9","?"],["SWE 19","?"]],
+      "🇸🇪 Suède":[["SWE 2","?"],["SWE 3","?"],["SWE 5","?"],["SWE 9","?"],["SWE 19","?"],["SWE 4","?"],["SWE 15","?"],["SWE 14","?"]],
       "🇹🇳 Tunisie":[["TUN 11","?"],["TUN 14","?"],["TUN 19","?"],["TUN 3","?"],["TUN 15","?"]],
     }
   },
