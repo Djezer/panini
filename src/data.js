@@ -6,6 +6,9 @@ export const ALREADY_GOT = {
 
 export const RECENT_DOUBLES = [];
 
+// Codes des doubles récemment reçus (mis en surbrillance dans l'onglet doubles)
+export const NEW_DOUBLES_HIGHLIGHT = ["MEX 15","RSA 8","RSA 4","KOR 17","KOR 12","KOR 13","CAN 11","QAT 14","SUI 15","SUI 2","BRA 11","BRA 18","MAR 9","HAI 10","USA 20","PAR 14","PAR 12","AUS 8","CIV 12","ECU 16","NED 17","NED 18","NED 6","NED 13","NED 3","NED 14","JPN 20","JPN 13","TUN 3","TUN 15","IRN 15","NZL 7","NZL 18","CPV 3","CPV 9","CPV 15","KSA 7","KSA 6","URU 19","URU 7","FRA 10","FRA 5","SEN 3","SEN 7","NOR 1","NOR 5","AUT 6","AUT 13","AUT 10","JOR 4","JOR 15","UZB 19","COL 2","GHA 13","PAN 11","CRO 15","FWC 15","FWC 12","FWC 17"];
+
 
 export const GROUPS = {
   "⭐":{ label:"Spéciaux", color:"#f5c518", bg:"#1a1500",
